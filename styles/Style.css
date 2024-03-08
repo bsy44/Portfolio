@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+/*BASE PAGE*/
+
+
+
+/*HERO*/
+
+.hero{
+    min-height: 90vh;
+    background: url("/img/hero-background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/*
 *{
     box-sizing: border-box;
 }
@@ -319,16 +333,6 @@ footer{
     box-shadow: #6e11ac 2px -2px 5px 10px;
 }
 
-    
-    /*width: 70vw;
-    align-self: center;
-    justify-content: center;
-    border-radius: 15px;
-    
-    box-shadow: #2222d240 2px -3px 10px 9px;*/
-
-/*Version mobile*/
-
 @media screen and (max-width:767px) {
     .container{
         max-width: 1280px;
@@ -393,4 +397,4 @@ footer{
         display: block;
     }
 
-}
+}*/
