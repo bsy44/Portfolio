@@ -7,12 +7,13 @@
         <title>Mon portfolio</title>
         <link rel="stylesheet" href="styles/Style.css">
         <script src="Js/Script.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     </head>
 
     <body>
         <header>
             <div class="container">
-                <h1>Boubacar Sy</h1>
+                <a href="#" class="resetStyle"><h1>Boubacar Sy</h1></a>
                 <nav>
                     <ul class="resetStyle">
                         <li><a href="#">Acceuil</a></li>
@@ -49,7 +50,7 @@
                 </p> 
                 
                 <div class="cv">
-                    <a href="ressource/CV_Alternance.pdf" target="_blank"><button id="cv">Télécharger mon CV</button></a>
+                    <a href="ressource/CV_Alternance.pdf" target="_blank"><button id="cv"><span class="material-symbols-outlined">download</span>Télécharger mon CV</button></a>
                 </div>
             </div>
         </section>
@@ -57,12 +58,43 @@
         <section id="skills">
             <div class="boxed centrer">
                 <h2 class=>Compétences</h2>
-                <h3>Developpement Web</h3>
+                <h3>Développement Web</h3>
 
-                <div class="flex">
-                    <div class="w25 skill">
-                        <img src="img/IMG_3538.PNG">
-                        <p>html</p>
+                <div class="flex gap20 skill-container">
+                    <div class="w20 skill">
+                        <img src="img/html5-2.webp">
+                    </div>
+
+                    <div class="w20 skill">
+                        <img src="img/css3.webp">
+                    </div>
+
+                    <div class="w20 skill">
+                        <img src="img/JavaScript-logo.png">
+                    </div>
+
+                    <div class="w20 skill">
+                        <img src="img/Postgresql_elephant.svg.png">
+                    </div>
+                    
+                    <div class="w20 skill">
+                        <img src="img/PHP.png">
+                    </div>
+                </div>
+
+                <h3 id="progTitle">Programmation</h3>
+                <div class="flex gap20 skill-container">
+                    
+                    <div class="w33 skill">
+                        <img src="img/Java_Logo.svg.png">
+                    </div>
+
+                    <div class="w33 skill">
+                        <img src="img/C_Logo.png">
+                    </div>
+
+                    <div class="w33 skill">
+                        <img src="img/bash.png" id="bash">
                     </div>
                 </div>
             </div>
@@ -70,11 +102,11 @@
             
         <section id="projets">
             <div class="boxed">
-                <h2 class="centrer marginBot50">Mes projets</h2>
+                <h2 class="centrer marginBot50 my-4 mb-4">Mes projets</h2>
                 <div class="flex wrap gap20 space-between">
                     <div class="w30 realisation">
                         <a href="#" target="_blank">
-                            <img src="img/Capture d'écran 2023-12-08 155639.png">
+                            <img src="img/cactusLogo.png" id="cactusLogo">
                             <h3 class="maxContent">Site Catus Hostel</h3>
                         </a>
                     </div>
@@ -118,21 +150,7 @@
         </section>
         
         <footer id="footer">
-            <div class="container">
-                <div class="grid">
-                    <div class="grid-item">
-                        <p>Boubacar Sy</p>
-                    </div>
-
-                    <div class="grid-item">
-                        
-                    </div>
-
-                    <div class="grid-item">
-                        <p>Copyright © 2024 boubacarSy</p>
-                    </div>
-                </div>
-            </div>
+            
         </footer>
 
     </body>
