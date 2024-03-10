@@ -186,7 +186,7 @@
         word-spacing: 10px;
     }
 
-/* Media query pour les écrans de petite taille */
+/* MEDIA PETIT ECRAN */
     @media (max-width: 750px) {
         .logo{
             font-weight: 200;
