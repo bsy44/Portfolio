@@ -2,18 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Passion+One:wght@400;700;900&display=swap');
 
 
-/*Class PREDEFINIT*/
-    .resetStyle{
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
+/* RESET STYLE*/
     a{
         text-decoration: none;
     }
 
-/*BASE PAGE*/
+    li{
+        list-style: none;
+    }
+
+/* BASE PAGE */
 
     *{
         margin: 0;
@@ -23,7 +21,7 @@
         line-height: 1.6;
     }
 
-/*HEADER*/
+/* HEADER */
     .header{
         background-color: #fff;
         border-bottom: 1.5px solid gray;
@@ -34,8 +32,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        color : #540FE8;
-        text-transform: uppercase;
     }
 
     .logo {
@@ -58,6 +54,8 @@
         letter-spacing: 1px;
         font-family: "Oswald", sans-serif;
         font-style: normal;
+        color: #540FE8;
+        text-transform: uppercase;
     }
 
     .header li{
@@ -68,12 +66,13 @@
 
     .header a{
         color: #540FE8;
-        font-weight: 500;
+        font-weight: 600;
+        text-transform: uppercase;
     }
 
     .navbar{display: none;}
 
-/*BOUTON BURGER*/
+/* BOUTON BURGER */
     .burger{
         border: none;
         background: none;
@@ -133,6 +132,58 @@
     .hero-content p {
         font-size: 3rem;
         text-transform: uppercase;
+    }
+
+
+/* FOOTER */    
+    footer{
+        background-color: #14131a;
+        color: #fff;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 200;
+        letter-spacing: 1px;
+        height: 75%;
+    }
+
+    .social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .social li{
+        width: 45px;
+        height: 45px;
+        margin: 25px;
+    }
+
+    .social a{
+        fill: #FFF;
+    }
+
+    .linkedin{  
+        position: relative;
+        background-color: #0e76a8;
+        border-radius: 50%;
+    }
+
+    .linkedin a{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        padding: 15px;
+    }
+
+
+    .footer-bottom{
+        padding: 15px;
+        background-color: #000000;
+        font-weight: 300;
+        word-spacing: 10px;
     }
 
 /* Media query pour les écrans de petite taille */
