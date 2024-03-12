@@ -26,19 +26,20 @@
     }
 
     section{
-        padding: 5rem 0;
+        padding: 6rem 0;
     }
 
     .grid {
         display: flex;
         flex-wrap: wrap;
-      }
+    }
       
-      .grid__item {
+    .grid-item {
         flex-grow: 1;
         flex-shrink: 0;
         width: 100%;
-      }
+        padding: 1rem;
+    }
 
 /* HEADER */
     .header{
@@ -163,7 +164,7 @@
 
 /* ABOUT */
     .about-content {
-        margin-top: 25px;
+        margin-top: 30px;
         padding: 20px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
     }
@@ -239,7 +240,7 @@
         justify-content: space-around;
         align-items: center;
         text-align: center;
-        margin-top: 30px;
+        margin-top: 45px;
     }
 
     .skill-top{
@@ -305,10 +306,53 @@
     .w60{
         width: 60px;
     }
-      
+
+/* PROJETS */
+    .portfolio{
+        background: #F5F5F5;
+    }
+
+    .portfolio .skill-top h2{
+        position: relative;
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+    .portfolio .skill-top hr{
+        margin-bottom: 20px;
+    }
+
+    .portfolio .skill-top p{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .portfolio .grid-item{
+        max-width: 50%;
+        margin-bottom: 0;
+        opacity: 1;
+        transition: all 1s ease;
+    }
+
+    .card{
+        background: #FFF;
+        text-transform: uppercase;
+        position: relative;
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+        border: 1px solid #EEE;
+
+    }
+
+    .card-inner{
+        padding: 2rem;
+    }
+
+    .card-title{
+        font-size: 1.5rem;
+    }
+    
 /* FOOTER */    
     footer{
-        background-color: #14131a;
+        background-color: #070418;
         color: #fff;
         text-align: center;
         font-size: 1.5rem;
@@ -454,4 +498,8 @@
         .burger{
             display: none;
         }
+
+        .portfolio .grid__item {
+            max-width: 33.3333%;
+          }
     }
