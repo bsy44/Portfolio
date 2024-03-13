@@ -312,13 +312,17 @@
         background: #F5F5F5;
     }
 
+    .portfolio .skill-top{
+        margin-bottom: 50px;
+    }
+
     .portfolio .skill-top h2{
         position: relative;
         text-transform: uppercase;
         font-size: 30px;
     }
     .portfolio .skill-top hr{
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 
     .portfolio .skill-top p{
@@ -327,10 +331,9 @@
     }
 
     .portfolio .grid-item{
-        max-width: 50%;
+        max-width: 33.3333%;
         margin-bottom: 0;
         opacity: 1;
-        transition: all 1s ease;
     }
 
     .card{
@@ -340,6 +343,13 @@
         box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
         border: 1px solid #EEE;
 
+    }
+
+    .card .card-img {
+        width: 100%;
+        height: 248px;
+        background-size: cover;
+        background-position: center;
     }
 
     .card-inner{
@@ -471,6 +481,8 @@
         .skill-content{
             width: 50%;
         }
+        .portfolio .grid-item{
+            max-width: 100%;        }
     }
 
 /* MEDIA GRAND ECRAN */
@@ -498,8 +510,4 @@
         .burger{
             display: none;
         }
-
-        .portfolio .grid__item {
-            max-width: 33.3333%;
-          }
     }
