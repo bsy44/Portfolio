@@ -26,7 +26,7 @@
     }
 
     section{
-        padding: 6rem 0;
+        padding: 5rem 0;
     }
 
     .grid {
@@ -163,7 +163,11 @@
     }
 
 /* ABOUT */
+    #about{
+        background: #F5F5F5
+    }      
     .about-content {
+        background: #FFF;
         margin-top: 30px;
         padding: 20px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
@@ -173,6 +177,7 @@
         text-transform: uppercase;
         font-size: 2.5rem;
         font-weight: 700;
+        text-align: center;
     }
 
     .section-title h2{
@@ -184,7 +189,7 @@
         height: 5px;
         border: none;
         background: #540FE8;
-        margin-left: 60px;
+        margin: 0 auto;
     }
 
     #about p{
@@ -359,6 +364,27 @@
     .card-title{
         font-size: 1.5rem;
     }
+
+    .card-overlay{
+        font-size: 4.5rem;
+        background: rgba(0, 0, 0, 0.8);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-overlay a{
+        color: #FFF;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 100%;
+    }
     
 /* FOOTER */    
     footer{
@@ -386,8 +412,8 @@
     }
     
     .social li{
-        width: 60px;
-        height: 60px;
+        width: 45px;
+        height: 45px;
         margin: 25px;
     }
 
@@ -412,11 +438,13 @@
     }
 
     .contact{
-        padding: 2rem;
+        padding: 3.5rem;
     }
 
     .contact h2{
-        font-size: 3rem;
+        font-size: 2.75rem;
+        text-transform: uppercase;
+        font-weight: 500;
     }
 
     .footer-bottom{
@@ -482,7 +510,12 @@
             width: 50%;
         }
         .portfolio .grid-item{
-            max-width: 100%;        }
+            max-width: 100%;        
+        }
+
+        .portfolio .skill-top p{
+            text-align: center;
+        }
     }
 
 /* MEDIA GRAND ECRAN */
