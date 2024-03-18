@@ -100,7 +100,7 @@
     }
 
     .header li{
-        font-size: 1.75rem;
+        font-size: 1.95rem;
         font-weight: 500;
         display: inline-flex;
         align-items: center;
@@ -175,15 +175,16 @@
 /* HERO */
     .hero {
         min-height: 100vh;
-        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/hero-background.jpg);
+        width: 100%;
+        background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(../img/Hero-background.jpg);
         background-size: cover;
-        background-position: center;
+        background-position: bottom; 
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-
+    
     .hero-content {
         text-align: center;
         color: #fff;
@@ -537,7 +538,6 @@
           }
 
         .hero{
-            min-width: 45vh;
             background-position: center;
         }
         .hero-content h1 {
@@ -580,7 +580,7 @@
         .header .container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 1.5rem;
+            padding: 1.25rem;
         }
 
         .container{
