@@ -169,7 +169,9 @@
 
     .burger .bar::after{
         transform: translateY(8px);
-    }    
+    }  
+
+    
 
 /* HERO */
     .hero {
@@ -198,6 +200,11 @@
     .hero-content p {
         font-size: 3rem;
         text-transform: uppercase;
+    }
+
+    .hero-content.left{
+        animation-duration: 1s;
+        animation-name: slideInleft;
     }
 
 /* ABOUT */
@@ -509,20 +516,19 @@
 
 /* MEDIA PETIT ECRAN */
     @media screen and (max-width: 749px) {
-        nav{
+        nav {
             display: flex;
             position: fixed;
-            top: 80px;
-            left: 110%;
             overflow: hidden;
             opacity: 0;
-            width: 100%;
-            height: calc(100vh - 55px);
+            right: 110%;
+            left: 0;
             background: #F5F5F5;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            transition: all .4s ease-out;
+            transition: all .3s ease-out;
+            transform: translateY(-10%);
         }
 
         nav .menu li{
@@ -534,13 +540,35 @@
             display: block;
             font-size: 2rem;
             padding: 2rem;
+            transition: all .4s;
         }
 
         .show-nav nav{
             opacity: 1;
             width: 100%;
-            left: 0;
+            top: 80px;
             z-index: 2;
+            transform: translateY(0);
+        }
+
+        .show-nav .burger .bar{
+            width: 0;
+        }
+    
+        .burger .bar::before, .burger .bar::after{
+            transition: all .3s ease-out;
+        }
+    
+        .show-nav .burger .bar::before{
+            transform: rotate(-45deg);
+        }
+    
+        .show-nav .burger .bar::after{
+            transform: rotate(45deg);
+        }
+
+        .header li a::before {
+            bottom: 10px;
         }
 
         .hero{
@@ -550,7 +578,7 @@
         .hero-content h1 {
             font-size: 3.25rem;
         }
-        
+
         .hero-content p {
             font-size: 1.25rem; 
             font-weight: 500;
@@ -600,3 +628,16 @@
             display: none;
         }
     }
+
+/* ANIMATION */
+    @keyframes slideInleft {
+        from {
+        transform: translateX(-150%);
+        }
+    
+        to {
+        transform: translateX(0);
+        }
+    }  
+
+
