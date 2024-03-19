@@ -65,7 +65,7 @@
     }
 
     .container{  
-        padding: 1.5rem 2.5rem; /*pour mobile*/
+        padding: 2rem 2.5rem; /*pour mobile*/
     }
 
     .flex{
@@ -82,7 +82,7 @@
     }
 
     .header li{
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 500;
         display: inline-flex;
         align-items: center;
@@ -173,13 +173,13 @@
     }
 
     .hero-content h1 {
-        font-size: 10rem;
+        font-size: 125px;
         font-weight:500;
         margin-bottom: 30px;
     }
 
     .hero-content p {
-        font-size: 3rem;
+        font-size: 35px;
     }
 
     .hero-content.left{
@@ -190,11 +190,14 @@
 /* ABOUT */
     #about{
         background: #F5F5F5
-    }      
+    }   
+
     .about-content {
+        justify-content: center;
+        align-items: center;
         background: #FFF;
-        margin-top: 30px;
-        padding: 20px;
+        margin-top: 45px;
+        padding: 25px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
     }
 
@@ -383,7 +386,7 @@
         position: relative;
         box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
         border: 1px solid #EEE;
-
+        margin-bottom: 25px;
     }
 
     .card .card-img {
@@ -531,7 +534,7 @@
         .show-nav nav{
             opacity: 1;
             width: 100%;
-            top: 55px;
+            top: 70px;
             z-index: 2;
             transform: translateY(0);
         }
@@ -557,16 +560,16 @@
         }
 
         .hero{
-            background-position: center;
+           background-size: auto;
         }
 
         .hero-content h1 {
-            font-size: 3.25rem;
+            font-size: 60px;
         }
 
         .hero-content p {
-            font-size: 1.25rem; 
-            font-weight: 500;
+            font-size: 25px; 
+            font-weight: 400;
         }
 
         #about h2{
@@ -604,7 +607,7 @@
         }
 
         .header .container {
-            max-width: 1300px;
+            max-width: 1375px;
             margin: 0 auto;
             padding: 2rem;
         }
