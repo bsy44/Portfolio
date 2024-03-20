@@ -157,7 +157,7 @@
     .hero {
         min-height: 100vh;
         width: 100%;
-        background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(../img/Hero-background.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(../img/hero-background.jpg);
         background-size: cover;
         background-position: bottom; 
         display: flex;
@@ -423,6 +423,10 @@
         align-items: center;
         display: flex;
         height: 100%;
+    }
+
+    .card:hover .card-overlay{
+        display: block;
     }
     
 /* FOOTER */    
