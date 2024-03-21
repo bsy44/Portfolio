@@ -404,31 +404,27 @@
         font-size: 1.5rem;
     }
 
-    .card-overlay{
-        font-size: 4.5rem;
-        background: rgba(0, 0, 0, 0.8);
-        display: none;
+    .modal{
+        position: fixed;
+        display: flex;
         align-items: center;
         justify-content: center;
-        position: absolute;
         top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
+        background: rgba(0, 0, 0, 0.8);
     }
 
-    .card-overlay a{
-        color: #FFF;
-        flex: 1;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        height: 100%;
+    .modal-wrapper{
+        overflow: auto;
+        background-color: #FFF;
+        width: 600px;
+        max-width:calc(100vw - 20px);
+        max-height:calc(100vh - 20px);
+        padding: 20px;
     }
 
-    .card:hover .card-overlay{
-        display: block;
-    }
-    
 /* FOOTER */    
     footer{
         background-color: #070418;

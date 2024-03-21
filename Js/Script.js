@@ -48,15 +48,3 @@ function animationPage(){
 }
 
 animationPage();
-
-function showProjet(){
-    const links = document.querySelector('card-link');
-    const modals = document.querySelector('.modal');
-
-    links.forEach(link => {
-        link.addEventListener('click', (Event)=> {
-            Event.preventDefault();
-            document.querySelector(`[id=${link.databaset.id}]`).classList.add('show');
-        });
-    });
-}
