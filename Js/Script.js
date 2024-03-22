@@ -72,8 +72,7 @@ function showProjectDetails() {
       btn.addEventListener('click', (event) => {
         hideModals();
       });
-    });
+    }); 
+}
   
-  }
-  
-  showProjectDetails();
+showProjectDetails();
