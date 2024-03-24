@@ -56,7 +56,6 @@
 
     img{
         width: 100%;
-        height: auto;
     }
 
     div{
@@ -376,29 +375,6 @@
     .portfolio .skill-top p{
         font-size: 2rem;
         font-weight: 500;
-    }
-
-    .portfolio .grid-item{
-        max-width: 50%;
-        margin-bottom: 0;
-        opacity: 1;
-    }
-
-    .card{
-        background: #FFF;
-        text-transform: uppercase;
-        position: relative;
-        box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
-        border: 1px solid #EEE;
-        margin-bottom: 25px;
-    }
-
-    .card-inner{
-        padding: 2rem;
-    }
-
-    .card-title{
-        font-size: 1.5rem;
     }
 
     .portfolio {
