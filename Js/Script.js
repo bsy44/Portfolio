@@ -77,5 +77,55 @@ function showProjectDetails() {
   
 showProjectDetails();
 
+function animScroll(){
+  let sections = document.querySelectorAll('section');
+
+  window.onscroll = () => {
+    sections.forEach(sec => {
+      let top = window.scrollY;
+      let offset = sec.offsetTop -  500;
+      let height = sec.offsetHeight;
+
+      if(top >= offset && top < offset + height) {
+        sec.classList.add('show-animate');
+      }
+      else{
+        sec.classList.remove('show-animate');
+      }
+    });
+  } 
+}
+
+animScroll();
+
+function smoothScroll(){
+  const links = [...document.querySelectorAll('nav a')];
+  const sections = [...document.querySelectorAll('section')];
+
+  let SectionPos;
+
+  function positionCalc(){
+    sectionPos = sections.map(section => section.offsetTop);
+  }
+
+  positionCalc();
+
+  links.forEach(link => link.addEventListener('click', addScrollSmooth));
+
+  function addScrollSmooth(e){
+    const linkIndex = links.indexOf(e.target);
+    window.scrollTo({
+      top: sectionPos[linkIndex],
+      behavior: 'smooth'
+    });
+  }
+
+  window.addEventListener('resize', positionCalc);
+}
+
+smoothScroll();
+
+
+
 
 

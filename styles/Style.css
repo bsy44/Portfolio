@@ -18,15 +18,17 @@
         box-sizing: border-box;
         font-family: "Inter", sans-serif;
         line-height: 1.6;
-        scroll-behavior: smooth;
     }
 
     html{
         font-size: 62.5%;
     }
 
+/* CLASSE GENERIQQUE */
     section{
+        min-height: 100vh;
         padding: 7rem 0;
+        overflow-x: hidden;
     }
 
     .grid {
@@ -41,7 +43,7 @@
         padding: 1rem;
     }
 
-/* CLASSE GENERIQQUE */    
+    
     .w70{
         width: 70px;
     }
@@ -62,12 +64,42 @@
         display: block;
     }
 
+    section .animate{
+        opacity: 0;
+        transition: 1s;
+        transform: scale(.7);
+    }
+
+    section.show-animate .animate{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .top .animate{
+        transition: 1s;
+        transform: translateX(-100%);
+    }
+
+    .top.show-animate .animate{
+        transform: translateX(0);
+    }
+
+    .bottom .animate{
+        transition: 1s;
+        transform: translateX(100%);
+    }
+
+    .bottom.show-animate .animate{
+        transform: translateX(0);
+    }
+
+    
 /* HEADER */
     .header{
+        width: 100%;
         background-color: #fff;
         border-bottom: 1px solid rgb(197, 197, 197);
-        position: fixed;
-        width: 100%;
+        position: sticky;
         top: 0;
         z-index: 1;
         box-shadow: 0 2px 4px rgba(0,0,0,0.2);
@@ -90,7 +122,7 @@
         color: #540FE8;
     }
 
-    header nav a {
+    .header nav a {
         font-size: 20px;
         font-weight: 500;
         display: inline-flex;
@@ -189,7 +221,7 @@
     }
 
 /* ABOUT */
-    #about{
+    .about{
         background: #F5F5F5
     }   
 
@@ -221,7 +253,7 @@
         margin: 0 auto;
     }
 
-    #about p{
+    .about p{
         font-size: 2rem;
         font-weight: 400;
         margin-bottom: 15px;
@@ -274,7 +306,7 @@
         justify-content: space-around;
         align-items: center;
         text-align: center;
-        margin-top: 45px;
+        margin-top: 60px;
     }
 
     .skill-top{
@@ -491,12 +523,20 @@
         top: 0;
     }
 
+    section .portfolio .haut .animate{
+        transform: translateX(-100%);
+    }
+
+    .haut .card.show-animate .animate{
+        transform: translateX(0);
+    }
+
 /* FOOTER */    
     footer{
         background-color: #070418;
         color: #fff;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-weight: 200;
         letter-spacing: 1px;
     }
@@ -514,7 +554,7 @@
         justify-content: center;
         align-items: center;
         display: flex;
-        margin-top: 50px;
+        margin-top: 70px;
     }
     
     .social li {
@@ -532,31 +572,33 @@
         justify-content: center;
     }
     
-        .social a {
-            transition: transform 0.4s ease-in-out; 
-        }
-        
-        .social a:hover {
-            background: #FFF;
-            fill: #070418;
-            transform: scale(1.25); 
-        }
-        
-        .social a:not(:hover) {
-            transform: scale(1); 
-        }
+    .social a {
+        transition: transform 0.4s ease-in-out; 
+    }
+    
+    .social a:hover {
+        background: #FFF;
+        fill: #070418;
+        transform: scale(1.25); 
+    }
+    
+    .social a:not(:hover) {
+        transform: scale(1); 
+    }
 
     .contact{
+        min-height: 40vh;
         padding: 3.5rem;
     }
 
     .contact h2{
-        font-size: 2.75rem;
+        font-size: 30px;
         text-transform: uppercase;
         font-weight: 500;
     }
 
     .footer-bottom{
+        bottom: 0;
         color: #f5f5f5;
         padding: 20px;
         background-color: #000000;
