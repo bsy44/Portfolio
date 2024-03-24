@@ -73,7 +73,7 @@
     }
 
     .container{  
-        padding: 1rem 2rem; /*pour mobile*/
+        padding: 2rem 2.5rem; /*pour mobile*/
     }
 
     .flex{
@@ -89,26 +89,19 @@
         color: #540FE8;
     }
 
-    .header li{
+    header nav a {
         font-size: 20px;
         font-weight: 500;
         display: inline-flex;
         align-items: center;
-        padding: 0 10px;
-    }
-
-    header li a {
+        padding: 0 15px;
         font-family: "Poppins", sans-serif;
         color: #540FE8;
         position: relative;
         transition: color 0.3s ease-in-out;
     }
     
-    .header li a:hover {
-        color: #540fe844; 
-    }
-    
-    .header li a::before {
+    .header nav a::before {
         content: '';
         position: absolute;
         bottom: -10px;
@@ -120,13 +113,11 @@
         transition: transform 0.2s ease-in-out; /* Transition plus rapide */
     }
     
-    .header li a:hover::before,
-    .header li a.active::before {
+    .header nav a:hover::before {
         transform: scaleX(1);
         transition: transform 0.3s ease-in-out; /* Transition encore plus rapide pour le changement de section */
     }
 
-    
 /* BOUTON BURGER */
     .burger{
         border: none;
@@ -593,12 +584,12 @@
             transform: translateY(-10%);
         }
 
-        nav .menu li{
+        header .menu {
             display: flex;
             justify-content: center;
         }
 
-        nav .menu a{
+        header .menu a{
             display: block;
             font-size: 2rem;
             padding: 1rem;
@@ -613,7 +604,7 @@
             transform: translateY(0);
         }
 
-        .header li a::before {
+        .header nav a::before {
             display: none;
         }
 
