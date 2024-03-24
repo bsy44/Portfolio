@@ -66,7 +66,8 @@
     .header{
         background-color: #fff;
         border-bottom: 1px solid rgb(197, 197, 197);
-        position: sticky;
+        position: fixed;
+        width: 100%;
         top: 0;
         z-index: 1;
         box-shadow: 0 2px 4px rgba(0,0,0,0.2);
@@ -100,22 +101,22 @@
         position: relative;
         transition: color 0.3s ease-in-out;
     }
-    
-    .header nav a::before {
+
+    nav a::before{
         content: '';
         position: absolute;
         bottom: -10px;
-        left: 0;
-        width: 100%;
+        left: 25%;
+        width: 50%;
         height: 3px;
         background-color: #540FE8;
         transform: scaleX(0);
-        transition: transform 0.2s ease-in-out; /* Transition plus rapide */
+        transition: transform 0.3s ease-in-out; 
     }
     
-    .header nav a:hover::before {
+    nav a:hover::before{
         transform: scaleX(1);
-        transition: transform 0.3s ease-in-out; /* Transition encore plus rapide pour le changement de section */
+        transition: transform 0.3s ease-in-out; 
     }
 
 /* BOUTON BURGER */
@@ -582,6 +583,7 @@
             flex-direction: column;
             transition: all .3s ease-out;
             transform: translateY(-10%);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
 
         header .menu {
@@ -599,7 +601,7 @@
         .show-nav nav{
             opacity: 1;
             width: 100%;
-            top: 55px;
+            top: 75px;
             z-index: 2;
             transform: translateY(0);
         }

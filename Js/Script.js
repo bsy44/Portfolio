@@ -30,7 +30,7 @@ function animationPage(){
 
     sections.forEach((section, index) => {
         section.style.opacity = "0.5";
-        section.style.transition = "all 1.6s";
+        section.style.transition = "all 1.7s";
       });
 
     let sectionObserver = new IntersectionObserver(function (entries, observer) {
