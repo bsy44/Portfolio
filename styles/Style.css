@@ -117,11 +117,13 @@
         height: 3px;
         background-color: #540FE8;
         transform: scaleX(0);
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.2s ease-in-out; /* Transition plus rapide */
     }
     
-    .navbar a:hover::before {
+    .header li a:hover::before,
+    .header li a.active::before {
         transform: scaleX(1);
+        transition: transform 0.3s ease-in-out; /* Transition encore plus rapide pour le changement de section */
     }
 
     
@@ -606,7 +608,7 @@
         .show-nav nav{
             opacity: 1;
             width: 100%;
-            top: 70px;
+            top: 55px;
             z-index: 2;
             transform: translateY(0);
         }
