@@ -450,34 +450,41 @@
         overflow: auto;
         text-align: left;
     }
+
+    .overlay-content li{
+        list-style: disc;
+        font-size: 15px;
+        font-weight: 500;
+        margin-left: 20px;
+    }
+
+    .overlay-title{
+        font-size: 20px;
+    } 
+
+    .modal__content p{
+        font-size: 15px;
+        margin: 12px 0;
+    }
       
     .modal img {
         margin-bottom: 2rem;
     }
       
     .modal__title {
-        margin: 0 0 2rem;
+        font-size: 30px;
+        text-align: center;
     }
       
     .modal__close {
         position: absolute;
-        right: 1rem;
-        top: 1rem;
+        right: 3rem;
+        top: 2rem;
         background: none;
-        border: 1px solid #eee;
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-        font-size: 3.1rem;
+        border: none;
+        font-size: 5rem;
         color: #666;
         cursor: pointer;
-    }
-      
-    .modal .grid-item {
-        max-width: 100%;
-        margin-bottom: 0;
-        opacity: 1;
-        transition: all 1s ease;
     }
       
     .card {
@@ -608,12 +615,12 @@
         word-spacing: 5px;
     }
 
-    .citation{
-        font-family: "Poppins", sans-serif;
+    footer .citation{
         padding: 5rem;
     }
 
-    .citation h3{
+    footer .citation h3{
+        font-family: "Poppins", sans-serif;
         font-style: italic;
         font-size: 30px;
         font-weight: 500;
@@ -730,12 +737,12 @@
             font-size: 1.4rem;
         }
 
-        .citation{
-            padding: 5rem 0;
+        footer .citation{
+            padding: 4rem .5rem ;
         }
 
-        .citation h3{
-            font-size: 25px;
+        footer .citation h3{
+            font-size: 20px;
         }
     }
 
@@ -757,10 +764,6 @@
             padding: 2rem;
         }
 
-        .modal .container{
-            max-width: 1200px;
-        }
-       
         .burger{
             display: none;
         }
