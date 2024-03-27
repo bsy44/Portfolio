@@ -464,6 +464,7 @@
 
     .modal__content p{
         font-size: 15px;
+        font-weight: 400;
         margin: 12px 0;
     }
       
@@ -525,7 +526,7 @@
         justify-content: center;
         height: 100%;
     }
-      
+
     .card:hover .card__overlay {
         top: 0;
     }
@@ -537,6 +538,12 @@
     .haut .card.show-animate .animate{
         transform: translateX(0);
     }
+
+    .link-projet a{
+        color: #540FE8;
+        font-weight: 600;
+        text-decoration: underline;
+     }
 
 /* FOOTER */    
     footer{
@@ -623,12 +630,13 @@
         font-family: "Poppins", sans-serif;
         font-style: italic;
         font-size: 30px;
-        font-weight: 500;
+        font-weight: 400;
     }
 
     .citation p{
         margin-top: 10px;
         font-size: 20px;
+        font-weight: 300;
     }
 
 /* MEDIA PETIT ECRAN */
@@ -744,6 +752,11 @@
         footer .citation h3{
             font-size: 20px;
         }
+
+        .modal__content img{
+            max-width: 100%;
+            height: auto;
+        }
     }
 
 /* MEDIA GRAND ECRAN */
@@ -770,19 +783,15 @@
 
         .portfolio .grid-item {
             max-width: 33.3333%;
-          }
+        }
         
-          .portfolio-filters .grid-item {
-            max-width: 25%;
-          }
-        
-          .modal__content {
+        .modal__content {
             padding: 3rem;
-          }
+        }
         
-          .modal .grid-item {
+        .modal .grid-item {
             max-width: 50%;
-          }
+        }
     }
 
 /* ANIMATION */
