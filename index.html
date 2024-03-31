@@ -180,7 +180,7 @@
                               <i>Année : 2023</i>
                             </p>
 
-                            <h5 class="overlay-title">Information projet</h5>
+                            <h5 class="overlay-title">Contexte</h5>
                             <p>Ce projet avait pour objectif de réaliser un tower defense en 2D en trio sur une durée de 6 semaines. Le but du jeu est de repousser des ennemis qui viennent dans différente vague à l'aide de nos défenses qu’il faudra placer stratégiquement.</p> 
                             <p> Pour la gestion de notre projet, on nous a imposé l'utilisation de trello et découpé notre code en plusieurs itérations que l’on rendait tous les 10 jours.</p>
 
@@ -249,22 +249,23 @@
                             </svg>
                             <i>Année : 2022</i>
                           </p>
-                          <h5 class="overlay-title">Description projet</h5>
+                          <h5 class="overlay-title">Contexte</h5>
                           <p>
-                            Projet réalisé sur une durée de 5 semaines. Réalisation d’un jeu de plateau en binôme sans le concept de programmation objet et avec comme seul interface le terminal. Utilisation de Github.
+                            Projet réalisé en duo sur une durée de 5 semaines. Réalisation d’un jeu de plateau sans le concept de programmation objet et avec comme seul interface le terminal. Utilisation de Github.
                           </p>
                           <p>A la fin de notre projet, nous devions rendre des tests JUnit ainsi qu’une petite documentation.</p>
 
-                          <p class="link-projet">Lien du projet : <a href="https://github.com/bsy44/BatailleNavale">Bataille navale</a></p>
+                          <p class="link-projet">Lien du projet : <a href="https://github.com/bsy44/BatailleNavale" target="_blank">Bataille navale</a></p>
       
                           <h5 class="overlay-title">Description du jeu</h5>
                           <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quaerat accusantium laborum aliquam enim. Vero
-                            voluptate, animi, sint vel mollitia ut odio, eius quis
-                            expedita quo at! Dignissimos ipsum odit dolores!
+                            Deux joueurs s'affrontent l’un contre l’autre. Chaque joueur possède 5 bateaux et 2 plateaux, un pour placer les bateaux que l’autre ne voit pas et un autre pour tirer les missiles. 
                           </p>
+
+                          <p>Une fois tous les bateaux placés, la partie peut commencer. Chaque joueur joue à tour de rôle et donne des coordonnées pour tirer sur les bateaux ennemis. Si un joueur touche un bateau, il peut de nouveau jouer.</p>
       
+                          <p>La partie se termine quand un joueur fait couler toute la flotte ennemie.</p>
+
                           <h5 class="overlay-title">Outils utilisé</h5>
       
                           <ul>
@@ -313,7 +314,7 @@
                             </svg>
                             <i>Année : 2023</i>
                           </p>
-                          <h5 class="overlay-title">Description projet</h5>
+                          <h5 class="overlay-title">Contexte</h5>
                           <p>
                             Projet réalisé sur une durée de 5 semaines. On devait réaliser un jeu de plateau en binôme sans le concept de programmation objet et avec comme seul interface le terminal. Utilisation de Github
                           </p>
@@ -361,10 +362,10 @@
                     <div class="container overlay-content">
                       <div class="grid">
                         <div class="grid-item">
-                          <img src="https://picsum.photos/600/400?random=2" loading="lazy" width="560" height="373"
-                            class="card__image" alt="Projet site de la ville de lyon" />
                           <img src="https://picsum.photos/600/400?random=22" loading="lazy" width="560" height="373"
                             class="card__image" alt="Projet site de la ville de lyon" />
+                          <img src="img/MCD_BD_F1.png" loading="lazy" width="560" height="373"
+                            class="card__image" alt="Projet site de la ville de lyon" style="border: 1px black solid;" />
                         </div>
                         <div class="grid-item">
                           <h4 class="modal__title h2">Base de données F1</h4>
@@ -376,24 +377,29 @@
                                 d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z">
                               </path>
                             </svg>
-                            <i>Année : 2019</i>
+                            <i>Année : 2023</i>
                           </p>
-                          <h5 class="overlay-title">Information projet</h5>
+                          <h5 class="overlay-title">Contexte</h5>
                           <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quaerat accusantium laborum aliquam enim. Vero
-                            voluptate, animi, sint vel mollitia ut odio, eius quis
-                            expedita quo at! Dignissimos ipsum odit dolores!
+                            Projet réaliser en trio visant à réaliser une base de données sur un sujet au choix. Nous devions rédiger un descriptif de notre base, réaliser un MCT,  MCD, un script SQL, les insertions SQL et tester notre base de données avec des requêtes.
                           </p>
-      
-                          <h5 class="overlay-title">Description du jeu</h5>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quaerat accusantium laborum aliquam enim. Vero
-                            voluptate, animi, sint vel mollitia ut odio, eius quis
-                            expedita quo at! Dignissimos ipsum odit dolores!
+
+                          <h5 class="overlay-title">Description projet</h5>
+
+                          <p>Notre schéma est composée de 7 tables :
+                            <ul class="grey">
+                              <li>Personne qui contient les informations sur les personnes</li>
+                              <li>Pilote qui est un héritage de personne</li>
+                              <li>Directeur Écurie qui est un héritage de personne</li>
+                              <li>Écurie qui contient les informations sur les écuries</li>
+                              <li>Circuit qui contient les informations sur les circuits</li>
+                              <li>Grand-Prix qui contient les informations sur les grand-prix</li>
+                              <li>Performance Pilote qui stock les résultat des pilotes sur les grandprix</li>
+                            </ul>
                           </p>
-      
+
+                          <p class="link-projet">Lien du projet : <a href="https://github.com/bsy44/BD_F1" target="_blank">Base de données F1</a></p>
+          
                           <h5 class="overlay-title">Outil utilisé</h5>
       
                           <ul>
@@ -416,61 +422,7 @@
                     <h3 class="card__title">Portfolio</h3>
                   </div>
                   <div class="card__overlay">
-                    <a href="#" class="card__link" data-id="modal-5">+</a>
-                  </div>
-                </div>
-                <div class="modal" id="modal-5">
-                  <button class="modal__close">&times;</button>
-      
-                  <div class="modal__content">
-      
-                    <div class="container overlay-content">
-                      <div class="grid">
-                        <div class="grid-item">
-                          <img src="https://picsum.photos/600/400?random=2" loading="lazy" width="560" height="373"
-                            class="card__image" alt="Projet site de la ville de lyon" />
-                          <img src="https://picsum.photos/600/400?random=22" loading="lazy" width="560" height="373"
-                            class="card__image" alt="Projet site de la ville de lyon" />
-                        </div>
-                        <div class="grid-item">
-                          <h4 class="modal__title h2">Mon Portfolio</h4>
-                          <p>
-                            <svg width="15" height="15" aria-hidden="true" focusable="false" data-prefix="far"
-                              data-icon="calendar" class="svg-inline--fa fa-calendar fa-w-14" role="img"
-                              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                              <path fill="currentColor"
-                                d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z">
-                              </path>
-                            </svg>
-                            <i>Année : 2024</i>
-                          </p>
-                          <h5 class="overlay-title">Description projet</h5>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quaerat accusantium laborum aliquam enim. Vero
-                            voluptate, animi, sint vel mollitia ut odio, eius quis
-                            expedita quo at! Dignissimos ipsum odit dolores!
-                          </p>
-      
-                          <h5 class="overlay-title">Description du jeu</h5>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quaerat accusantium laborum aliquam enim. Vero
-                            voluptate, animi, sint vel mollitia ut odio, eius quis
-                            expedita quo at! Dignissimos ipsum odit dolores!
-                          </p>
-      
-                          <h5 class="overlay-title">Outils utilisé</h5>
-      
-                          <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>Github</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+                    <p>Site où vous vous trouver actuellement ^^</p>
                   </div>
                 </div>
               </div>
@@ -510,20 +462,28 @@
                             </svg>
                             <i>Année : 2023</i>
                           </p>
-                          <h5 class="overlay-title">Description projet</h5>
+                          <h5 class="overlay-title">Contexte</h5>
                           <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quaerat accusantium laborum aliquam enim. Vero
-                            voluptate, animi, sint vel mollitia ut odio, eius quis
-                            expedita quo at! Dignissimos ipsum odit dolores!
+                            Ce projet en trio consistait à réaliser une page d'accueil en anglais pour un hôtel situé à Saint-Denis à partir d’une page minimaliste donnée. 
                           </p>
+
+                          <p>Celle-ci visait à promouvoir des chambres d'hôtel dont une orientée sur un athlète populaire de notre choix en vue des Jeux Olympiques de Paris 2024.</p>
       
-                          <h5 class="overlay-title">Description du jeu</h5>
+                          <p>Notre projet devait répondre à la contrainte d’éco-responsabilité en conséquence du réchauffement climatique.</p>
+
+                          <p class="link-projet">Lien du projet : <a href="https://github.com/bsy44/Site-cactus-hotel" target="_blank">Cactus Hostel</a></p>                
+                          
+                          <h5 class="overlay-title">Description du site</h5>
+                          
                           <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quaerat accusantium laborum aliquam enim. Vero
-                            voluptate, animi, sint vel mollitia ut odio, eius quis
-                            expedita quo at! Dignissimos ipsum odit dolores!
+                            La page d'accueil est divisé en 4 sections :
+
+                            <ul class="grey">
+                              <li>La 1ère qui contient une barre de navigation ainsi que des aperçues sur l'hôtel.</li>
+                              <li>La 2ème présente la chambre spécial athlète et ces caractéristique. Nous avons choisi de représenter la star montante de la NBA Victor Wembanyama</li>
+                              <li>La 3ème nous montre où est situé le stade de Stade de France et comment s’y rendre par rapport à l'hôtel.</li>
+                              <li>Enfin la dernière qui contient les contacts de l’hôtel ainsi que son adresse et de quelque lien externe</li>
+                            </ul>
                           </p>
       
                           <h5 class="overlay-title">Outils utilisé</h5>

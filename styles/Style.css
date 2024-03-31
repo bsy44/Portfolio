@@ -454,7 +454,7 @@
     .overlay-content li{
         list-style: disc;
         font-size: 15px;
-        font-weight: 500;
+        font-weight: 400;
         margin-left: 20px;
     }
 
@@ -527,6 +527,19 @@
         height: 100%;
     }
 
+    .card__overlay p {
+        color: #FFF;
+        position: absolute;
+        font-size: 2.5rem;
+        font-weight: 500;
+        width: 100%; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        text-align: center;
+        text-transform: none;
+      }
+
     .card:hover .card__overlay {
         top: 0;
     }
@@ -543,7 +556,11 @@
         color: #540FE8;
         font-weight: 600;
         text-decoration: underline;
-     }
+    }
+
+    .grey li{
+        color: #333;
+    }
 
 /* FOOTER */    
     footer{
