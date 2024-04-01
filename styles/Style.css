@@ -96,7 +96,6 @@
     
 /* HEADER */
     .header{
-        width: 100%;
         background-color: #fff;
         border-bottom: 1px solid rgb(197, 197, 197);
         position: sticky;
@@ -337,7 +336,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 2rem;
+        padding: 2rem 0;
     }
 
     .skill-content p{
@@ -357,11 +356,11 @@
         border-radius: 45px;
     }
 
-    .skill-content .img{
+    .skill-content .img, .outil-content .img{
         transition: transform 0.3s ease-in-out;
     }
     
-    .skill-content .img:hover{
+    .skill-content .img:hover, .outil-content .img:hover{
         transform: scale(1.25); 
     }
     
@@ -374,14 +373,50 @@
     }
 
     .skill-outil{
-        background-color: #F5F5F5;
-        color: #070418;
+        margin-top: 45px;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .box{
+        padding: 0 43px;    
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .box h3{
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
         padding: 10px;
     }
 
-    .w60{
-        width: 60px;
+    .SE{
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+
+    .outil-content{
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .SE p{
+        text-align: center;
+        padding: 1.75rem 0;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    .space30{
+        margin-top: 60px;
     }
     
 /* PROJETS */
@@ -758,10 +793,6 @@
             font-weight: 40;
         }
 
-        .portfolio a {
-            font-size: 1.4rem;
-        }
-
         footer .citation{
             padding: 4rem .5rem ;
         }
@@ -773,6 +804,10 @@
         .modal__content img{
             max-width: 100%;
             height: auto;
+        }
+
+        .box{
+            padding: 15px 0;
         }
     }
 
