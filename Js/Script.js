@@ -100,7 +100,7 @@ animScroll();
 
 function smoothScroll(){
   const links = [...document.querySelectorAll('nav a')];
-  const sections = [...document.querySelectorAll('section')];
+  const sections = [...document.querySelectorAll('section, .hero')];
 
   let SectionPos;
 
