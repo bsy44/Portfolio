@@ -416,10 +416,36 @@
     .space30{
         margin-top: 60px;
     }
+
+/* FORMATION */
+    .formation{
+        background-color: #ffffff;
+    }
+
+    .timeline{
+        position: relative;
+        max-width: 1200px;
+        margin: 100px auto;
+    }
+
+    .timeline-content{
+        padding: 10px 50px;
+        position: relative;
+        width: 50%;
+        background: rgb(0, 0, 0, 0.3);
+    }
+
+    .text-box{
+        padding: 20px 30px;
+        background: #FFF;
+        position: relative;
+        border-radius: 6px;
+        font-size: 15px;
+    }
     
 /* PROJETS */
     .portfolio{
-        background: #F5F5F5;
+        background: #EEE;
     }
 
     .portfolio .skill-top h2{
