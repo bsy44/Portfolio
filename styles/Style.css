@@ -42,7 +42,6 @@
         width: 100%;
         padding: 1rem;
     }
-
     
     .w70{
         width: 70px;
@@ -100,7 +99,7 @@
         border-bottom: 1px solid rgb(197, 197, 197);
         position: sticky;
         top: 0;
-        z-index: 1;
+        z-index: 2;
         box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     }
 
@@ -418,42 +417,109 @@
     }
 
 /* FORMATION */
-    .formation{
-        background-color: #ffffff;
+    section.formation{
+        background-color: #070418;
+        min-height: 80vh;
     }
 
     .timeline{
         position: relative;
         max-width: 1200px;
-        margin: 100px auto;
+        margin: 80px auto;
     }
 
     .timeline-content{
         padding: 10px 50px;
         position: relative;
         width: 50%;
-        background: rgb(0, 0, 0, 0.3);
     }
 
     .text-box{
         padding: 20px 30px;
-        background: #FFF;
+        background: #fff;
         position: relative;
         border-radius: 6px;
-        font-size: 15px;
+        font-size: 17px;
+        box-shadow: 1px 4px 10px rgb(112, 7, 211);
     }
+    .text-box:hover{
+        transition: transform .4s ease-in-out;
+        transform: scale(1.075);
+    }
+
+    .text-box p{
+        margin-bottom: 5px;
+    }
+
+    .formation .skill-top h2{
+        color: #ffffff;
+    }
+
+    .text-box small{
+        display: inline-block;
+        padding: 5px 0;
+    }
+
+    .text-box li{
+        margin-left: 20px;
+        list-style: disc;
+    }
+
+    .left-content{
+        left: 0;
+    }
+
+    .right-content{
+        left: 50%;
+    }
+
+    .timeline::after{
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 100%;
+        background: #f5f5f5;
+        top :0;
+        left: 50%;
+        margin-left: -3px;
+    }
+
+    .right-arrow{
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: 28px;
+        z-index: 1;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 15px solid #540FE8;
+        right: -15px;
+    }
+
+    .left-arrow{
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: 28px;
+        z-index: 1;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 15px solid #540FE8;
+        left: -15px;
+    }   
     
 /* PROJETS */
     .portfolio{
         background: #EEE;
     }
 
-    .portfolio .skill-top h2{
+    .skill-top h2{
         position: relative;
         text-transform: uppercase;
         font-size: 30px;
     }
-    .portfolio .skill-top hr{
+    
+    .skill-top hr{
         margin-bottom: 50px;
     }
 
@@ -461,10 +527,6 @@
         font-size: 2rem;
         font-weight: 500;
     }
-
-    .portfolio {
-        background: #F5F5F5;
-      }
       
     .portfolio .grid-item {
         max-width: 50%;
@@ -603,14 +665,6 @@
         top: 0;
     }
 
-    section .portfolio .haut .animate{
-        transform: translateX(-100%);
-    }
-
-    .haut .card.show-animate .animate{
-        transform: translateX(0);
-    }
-
     .link-projet a{
         color: #540FE8;
         font-weight: 600;
@@ -623,8 +677,8 @@
 
 /* FOOTER */    
     footer{
-        background-color: #070418;
-        color: #fff;
+        background-color: #EEE;
+        color: #000000;
         text-align: center;
         font-size: 1.25rem;
         font-weight: 200;
@@ -665,8 +719,8 @@
     }
 
     .social a {
-        fill: #FFF;
-        border: 1px solid #FFF;
+        fill: #070418;
+        border: 2px solid #070418;
         border-radius: 50%;
         padding: 1rem;
         display: flex;
@@ -680,8 +734,6 @@
     }
     
     .social a:hover {
-        background: #FFF;
-        fill: #070418;
         transform: scale(1.25); 
     }
     
@@ -693,7 +745,7 @@
         width: 100%;
         color: #f5f5f5;
         padding: 20px;
-        background-color: #000000;
+        background-color: #0c0c0c;
         font-weight: 400;
         word-spacing: 5px;
     }
@@ -712,7 +764,7 @@
     .citation p{
         margin-top: 10px;
         font-size: 20px;
-        font-weight: 300;
+        font-weight: 400;
     }
 
 /* MEDIA PETIT ECRAN */
@@ -833,6 +885,38 @@
         .box{
             padding: 15px 0;
         }
+
+        .formation .skill-top hr{
+            margin-bottom: 0;
+        }
+
+        .timeline::after{
+            left: 31px;
+        }
+
+        .timeline-content{
+            width: 100%;
+            padding-left: 80px;
+            padding-right: 25px;
+        }
+
+        .text-box{
+            font-size: 13px;
+        }
+
+        .text-box small{
+            margin-bottom: 10px;
+        }
+
+        .right-content{
+            left: 0;
+        }
+
+        .left-arrow, .right-arrow{
+            border-right: 15px solid #540FE8;
+            border-left: 0;
+            left: -15px;
+        }
     }
 
 /* MEDIA GRAND ECRAN */
@@ -874,6 +958,16 @@
     @keyframes slideInleft {
         from {
         transform: translateX(-150%);
+        }
+    
+        to {
+        transform: translateX(0);
+        }
+    }  
+
+    @keyframes slideInRight {
+        from {
+        transform: translateX(150%);
         }
     
         to {

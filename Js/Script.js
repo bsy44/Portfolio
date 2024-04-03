@@ -83,7 +83,7 @@ function animScroll(){
   window.onscroll = () => {
     sections.forEach(sec => {
       let top = window.scrollY;
-      let offset = sec.offsetTop -  400;
+      let offset = sec.offsetTop -  450;
       let height = sec.offsetHeight;
 
       if(top >= offset && top < offset + height) {
@@ -102,7 +102,7 @@ function smoothScroll(){
   const links = [...document.querySelectorAll('nav a')];
   const sections = [...document.querySelectorAll('section')];
 
-  let SectionPos;
+  let sectionPos;
 
   function positionCalc(){
     sectionPos = sections.map(section => section.offsetTop);
@@ -113,9 +113,20 @@ function smoothScroll(){
   links.forEach(link => link.addEventListener('click', addScrollSmooth));
 
   function addScrollSmooth(e){
+    e.preventDefault();
+
     const linkIndex = links.indexOf(e.target);
+    let navHeight = document.querySelector('nav').offsetHeight; 
+
+    if (window.innerWidth <= 749) {
+      navHeight = 40; 
+    }
+    else{
+      navHeight = 82;
+    }
+
     window.scrollTo({
-      top: sectionPos[linkIndex],
+      top: sectionPos[linkIndex] - navHeight, 
       behavior: 'smooth'
     });
   }
