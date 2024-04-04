@@ -92,6 +92,32 @@
         transform: translateX(0);
     }
 
+/* BOUTON TOP */    
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 500,
+        'GRAD' 0,
+        'opsz' 24;
+        transform: scale(1.45);
+        color: #540FE8;
+    }
+
+    .btn span{
+        width: 30px;
+        height: 30px;
+        background: rgb(255, 255, 255);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        cursor: pointer;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3); 
+    }
+
     
 /* HEADER */
     .header{
@@ -101,6 +127,7 @@
         top: 0;
         z-index: 2;
         box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+
     }
 
     .container{  

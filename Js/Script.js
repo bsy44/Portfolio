@@ -21,9 +21,6 @@ function menuMobile() {
 }
 menuMobile();
 
-/* PORTFOLIO */
-
-
 /* EFFET */
 function animationPage(){
     const sections = document.querySelectorAll('section');
@@ -83,7 +80,7 @@ function animScroll(){
   window.onscroll = () => {
     sections.forEach(sec => {
       let top = window.scrollY;
-      let offset = sec.offsetTop -  450;
+      let offset = sec.offsetTop -  400;
       let height = sec.offsetHeight;
 
       if(top >= offset && top < offset + height) {
@@ -122,7 +119,7 @@ function smoothScroll(){
       navHeight = 40; 
     }
     else{
-      navHeight = 82;
+      navHeight = 80;
     }
 
     window.scrollTo({
@@ -136,7 +133,26 @@ function smoothScroll(){
 
 smoothScroll();
 
+function scrollTop() {
+  const btn = document.querySelector('.btn');
 
+  function toggleButtonVisibility() {
+    if (window.scrollY >= 2500) { 
+      btn.style.display = 'block';
+    } else {
+      btn.style.display = 'none'; 
+    }
+  }
 
+  window.addEventListener('scroll', toggleButtonVisibility);
 
+  btn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  });
+}
 
+scrollTop();
