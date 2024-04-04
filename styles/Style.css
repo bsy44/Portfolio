@@ -65,7 +65,7 @@
 
     section .animate{
         opacity: 0;
-        transition: 1s;
+        transition: 1.25s;
         transform: scale(.7);
     }
 
@@ -75,7 +75,7 @@
     }
 
     .top .animate, .skill-outil .animate{
-        transition: 1s;
+        transition: 1.25s;
         transform: translateX(-100%);
     }
 
@@ -114,8 +114,9 @@
         position: fixed;
         right: 20px;
         bottom: 20px;
+        font-weight: 800;
         cursor: pointer;
-        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3); 
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5); 
     }
 
     
@@ -254,7 +255,7 @@
         background: #FFF;
         margin-top: 45px;
         padding: 25px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
     }
 
     .section-title {
@@ -284,8 +285,12 @@
         color: #333;
     }
 
-    .cv{
+    .cv {
         text-align: center;
+    }
+
+    .cv span{
+        color: white;
     }
     
     #cv{

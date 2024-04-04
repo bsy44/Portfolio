@@ -80,15 +80,15 @@ function animScroll(){
   window.onscroll = () => {
     sections.forEach(sec => {
       let top = window.scrollY;
-      let offset = sec.offsetTop -  400;
+      let offset = sec.offsetTop -  150;
       let height = sec.offsetHeight;
 
       if(top >= offset && top < offset + height) {
         sec.classList.add('show-animate');
       }
-      else{
+      /*else{
         sec.classList.remove('show-animate');
-      }
+      }*/
     });
   } 
 }
@@ -137,7 +137,7 @@ function scrollTop() {
   const btn = document.querySelector('.btn');
 
   function toggleButtonVisibility() {
-    if (window.scrollY >= 2500) { 
+    if (window.scrollY >= 3000) { 
       btn.style.display = 'block';
     } else {
       btn.style.display = 'none'; 
