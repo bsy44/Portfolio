@@ -137,7 +137,7 @@ function scrollTop() {
   const btn = document.querySelector('.btn');
 
   function toggleButtonVisibility() {
-    if (window.scrollY >= 3000) { 
+    if (window.scrollY >= 2750) { 
       btn.style.display = 'block';
     } else {
       btn.style.display = 'none'; 

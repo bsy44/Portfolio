@@ -99,22 +99,21 @@
         'wght' 500,
         'GRAD' 0,
         'opsz' 24;
-        transform: scale(1.45);
+        transform: scale(1.2);
         color: #540FE8;
     }
 
     .btn span{
         width: 30px;
         height: 30px;
-        background: rgb(255, 255, 255);
-        border-radius: 50%;
+        background: #F5F5F5;        
         display: flex;
         justify-content: center;
         align-items: center;
         position: fixed;
         right: 20px;
         bottom: 20px;
-        font-weight: 800;
+        font-weight: 600;
         cursor: pointer;
         box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5); 
     }
@@ -369,7 +368,7 @@
         color: #333;
     }
 
-    /* SLIDER */
+/* SLIDER */
     #slider{
         overflow: hidden;
     }
@@ -392,46 +391,46 @@
     }
 
     #slides .inner {
-    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
-    width: 400%;
-    height: 300px;
+        transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+        width: 400%;
+        height: 300px;
     }
 
     #slides .slide {
-    width: 25%;
-    float:left;
-    padding: 0 2rem;
-    display: flex;
+        width: 25%;
+        float:left;
+        padding: 0 2rem;
+        display: flex;
     }
     
     #controls label {
-    transition: opacity 0.2s ease-out;
-    display: none;
-    width: 50px;
-    height: 50px;
-    opacity: .4;
+        transition: opacity 0.2s ease-out;
+        display: none;
+        width: 50px;
+        height: 50px;
+        opacity: .4;
     }
 
     #controls label:hover {
-    opacity: 1;
+        
     }
 
     #bullets {
-    text-align: center;
+        text-align: center;
     }
     
     #bullets label {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius:100%;
-    background: #ccc;
-    margin: 25px 10px;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius:100%;
+        background: #ccc;
+        margin: 10px;
     }
 
     #slide1:checked ~ #bullets label:nth-child(1),
     #slide2:checked ~ #bullets label:nth-child(2) {
-    background: #444;
+        background: #444;
     }
     
     
