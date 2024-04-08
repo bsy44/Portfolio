@@ -252,7 +252,7 @@
         justify-content: center;
         align-items: center;
         background: #FFF;
-        padding: 25px;
+        padding: 30px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     }
 
@@ -281,11 +281,12 @@
         font-weight: 400;
         text-align: justify;
         margin-bottom: 15px;
-        color: #333;
+        color: #000000;
     }
 
     .cv {
         text-align: center;
+        padding: 4rem 0 0;
     }
 
     .cv span{
@@ -409,10 +410,6 @@
         width: 50px;
         height: 50px;
         opacity: .4;
-    }
-
-    #controls label:hover {
-        
     }
 
     #bullets {
@@ -708,6 +705,7 @@
         left: 0;
         opacity: 1;
         visibility: visible;
+        overflow: hidden;
     }
       
     .modal__content {
@@ -996,6 +994,10 @@
         #about p{
             text-align: left;
             font-weight: 1rem;
+        }
+
+        .cv {
+            padding: 0;
         }
 
         .skill-content{
