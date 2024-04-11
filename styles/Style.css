@@ -561,7 +561,6 @@
 /* FORMATION */
     section.formation{
         background-color: #070418;
-        min-height: 80vh;
     }
 
     .timeline{
@@ -1060,7 +1059,7 @@
         }
 
         .timeline::after{
-            left: 31px;
+            left: 30px;
         }
 
         .timeline-content{
@@ -1085,6 +1084,13 @@
             border-right: 15px solid #540FE8;
             border-left: 0;
             left: -15px;
+        }
+
+        .dot::after, .right-content .dot::after{
+            width: 20px;
+            height: 20px;
+            left: 20px;
+            margin-top: 10px;
         }
 
         .passion-title{
