@@ -104,18 +104,23 @@
     }
 
     .btn span{
-        width: 30px;
-        height: 30px;
-        background: #F5F5F5;        
+        width: 25px;
+        height: 25px;
+        background: #F5F5F5;    
         display: flex;
         justify-content: center;
         align-items: center;
         position: fixed;
         right: 20px;
         bottom: 20px;
-        font-weight: 600;
+        font-weight: 700;
         cursor: pointer;
         box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5); 
+    }
+
+    .btn span:hover{
+        background: #ffffffb0;
+        transition: .3s ease-out;
     }
 
     
@@ -566,7 +571,7 @@
     }
 
     .timeline-content{
-        padding: 10px 50px;
+        padding: 10px 60px;
         position: relative;
         width: 50%;
     }
@@ -580,7 +585,7 @@
         box-shadow: 1px 4px 10px rgb(112, 7, 211);
     }
     .text-box:hover{
-        transition: transform .4s ease-in-out;
+        transition: transform .3s ease-in-out;
         transform: scale(1.075);
     }
 
@@ -643,7 +648,24 @@
         border-bottom: 15px solid transparent;
         border-right: 15px solid #540FE8;
         left: -15px;
-    }   
+    }
+
+    .dot::after{
+        content: '';
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        border-radius: 50%;
+        right: -20px;
+        top: 32px;
+        background: #ffffff;
+        z-index: 2;
+    }
+
+    .right-content .dot::after{
+        left: -20px;
+    }
+    
     
 /* PROJETS */
     .portfolio{
@@ -865,6 +887,7 @@
         width: 52px;
         height: 52px;
         justify-content: center;
+        background-color: #ffffff;
     }
     
     .social a {
@@ -986,7 +1009,7 @@
         }
 
         .about-content{
-            padding: 3rem 2rem;
+            padding: 5rem 2rem;
         }
 
         .about-content p{
