@@ -86,9 +86,6 @@ function animScroll(){
       if(top >= offset && top < offset + height) {
         sec.classList.add('show-animate');
       }
-      /*else{
-        sec.classList.remove('show-animate');
-      }*/
     });
   } 
 }
