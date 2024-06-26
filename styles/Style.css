@@ -106,6 +106,7 @@
     .btn span{
         width: 25px;
         height: 25px;
+        border-radius: 50px;
         background: #F5F5F5;    
         display: flex;
         justify-content: center;
